@@ -14,16 +14,11 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text(
-          "Hello Ninjas",
-          style: TextStyle(fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              color: Colors.grey[500],
-              fontFamily: "IndieFlower"
-          ),
-
-        ),
+//        child: Image(
+//           image: AssetImage("assets/images/snow.jpg"),
+////          image: NetworkImage("https://images.unsplash.com/photo-1581115684447-383df67ff1ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI2Njg5fQ&auto=format&fit=crop&w=934&q=80") ,
+//        )
+      child: Image.asset("assets/snow.jpg"),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text("click"),
@@ -33,4 +28,3 @@ class Home extends StatelessWidget {
     );
   }
 }
- 
