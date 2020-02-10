@@ -13,7 +13,31 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
+      body:
+      Container(
+        color: Colors.grey[400],
+        child: Text("Hello"),
+        padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+        margin: EdgeInsets.all(30.0),
+      ),
+
+//      Container(
+//        color: Colors.grey[400],
+//        child: Text("Hello"),
+//        padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+//      ),
+
+
+
+//      Container(
+//        color: Colors.grey[400],
+//        child: Text("Hello"),
+//        padding: EdgeInsets.all(20.0),
+//      ),
+
+
+
+//      Center(
 //        child: Image(
 //           image: AssetImage("assets/images/snow.jpg"),
 ////          image: NetworkImage("https://images.unsplash.com/photo-1581115684447-383df67ff1ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI2Njg5fQ&auto=format&fit=crop&w=934&q=80") ,
@@ -38,13 +62,13 @@ class Home extends StatelessWidget {
 //        Icons.mail
 //      ), label: Text("Mail me"),
 //        color: Colors.amber,),
-
-      child: IconButton(
-        onPressed: () {},
-        icon: Icon(Icons.alternate_email),
-        color: Colors.amber,
-      ),
-      ),
+//
+//      child: IconButton(
+//        onPressed: () {},
+//        icon: Icon(Icons.alternate_email),
+//        color: Colors.amber,
+//      ),
+//      ),
       floatingActionButton: FloatingActionButton(
         child: Text("click"),
         onPressed: (){},
