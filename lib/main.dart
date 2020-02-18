@@ -13,35 +13,69 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-       body: Column(
-         mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Text("hello"),
-                Text("World")
-              ],
-            ),
-        Container(
-          padding: EdgeInsets.all(20.0),
-          color: Colors.cyan,
-          child: Text("one"),
-        ),
-            Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.pinkAccent,
-              child: Text("Two"),
-            ),
+       body: Row(
 
+         children: <Widget>[
+           Expanded(
+             child: Image.asset("assets/snow.jpg"),
+             flex: 3,
+           ),
+           Expanded(
+       flex: 1,
+       child:
+       Container(
+             padding: EdgeInsets.all(30.0),
+             color: Colors.pinkAccent,
+             child: Text("1"),
+           )),
+           Expanded(
+              flex: 1,
+               child:
+               Container(
+             padding: EdgeInsets.all(30.0),
+             color: Colors.amber,
+             child: Text("2"),
+           )),
+          Expanded(
+            flex: 1,
+            child:
             Container(
-              padding: EdgeInsets.all(40.0),
-              color: Colors.amber,
-              child: Text("Three"),
-            ),
+             padding: EdgeInsets.all(30.0),
+             color: Colors.cyan,
+             child: Text("3"),
+           )),
 
-          ],
+         ],
        ),
+//       Column(
+//         mainAxisAlignment: MainAxisAlignment.end,
+//          crossAxisAlignment: CrossAxisAlignment.end,
+//          children: <Widget>[
+//            Row(
+//              children: <Widget>[
+//                Text("hello"),
+//                Text("World")
+//              ],
+//            ),
+//        Container(
+//          padding: EdgeInsets.all(20.0),
+//          color: Colors.cyan,
+//          child: Text("one"),
+//        ),
+//            Container(
+//              padding: EdgeInsets.all(30.0),
+//              color: Colors.pinkAccent,
+//              child: Text("Two"),
+//            ),
+//
+//            Container(
+//              padding: EdgeInsets.all(40.0),
+//              color: Colors.amber,
+//              child: Text("Three"),
+//            ),
+//
+//          ],
+//       ),
 //      Row(
 //        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 //        crossAxisAlignment: CrossAxisAlignment.end,
